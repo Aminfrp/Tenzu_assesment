@@ -52,7 +52,7 @@ export default async function Home() {
             <Link
               key={post.id}
               className="block py-4 hover:scale-[1.005]"
-              href={"/" + post.id + "/"}
+              href={"/" + post.title.replaceAll(" ", "-") + "/"}
             >
               <article>
                 <PostTitle
